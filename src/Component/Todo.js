@@ -1,3 +1,4 @@
+import "./Todo.css";
 import React, { useState } from 'react'
 
 export default function Todo() {
@@ -15,16 +16,16 @@ export default function Todo() {
     })
   }
   return (
-    <div>
+    <div className="todolist mt-5">
       <div className=' container'>
-         <h1>Todo List</h1>
-         <input type="text" placeholder='Add Activity' value={activity} onChange={(e)=>setActivity(e.target.value)}/>
-         </div>
+         <h2 className="text-white m-3">What's the plan for Today?</h2>
+         <input type="text" placeholder='Add  your Activity...' value={activity} onChange={(e)=>setActivity(e.target.value)}/>
          <button onClick={addAtivity}>Add</button>
+         </div>
          <div>
           {listData.map(data=>{
             return(
-             <div>
+             <div className='text-danger'>
                <h2>{data}</h2>
               <button>remove</button>
               </div>

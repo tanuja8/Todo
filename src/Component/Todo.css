@@ -1,0 +1,14 @@
+.todolist{
+    width: 40%;
+    background: rgb(40, 40, 40);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+input{
+    border: none;
+    border-radius: 5px;
+}
+::placeholder{
+    font-size: large;
+    color: orangered;
+}
