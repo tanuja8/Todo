@@ -25,9 +25,11 @@ export default function Todo() {
          <div>
           {listData.map(data=>{
             return(
-             <div className='text-danger'>
-               <h2>{data}</h2>
-              <button>remove</button>
+              <div className="py-3 ">
+             <div className='text-white  task_area'>
+               <input type="text" value={data }></input>
+              <button className="R_btn">Remove</button>
+              </div>
               </div>
             )
           })}
