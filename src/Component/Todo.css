@@ -1,6 +1,7 @@
 .todolist{
     width: 40%;
-    background: rgb(56, 55, 55);
+    background:  #727171;
+    box-shadow:5px 5px 5px #9a9999;
     margin: 0 auto;
     border-radius: 10px;
 }

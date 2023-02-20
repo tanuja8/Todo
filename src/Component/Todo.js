@@ -15,6 +15,7 @@ export default function Todo() {
      return updatedList
     })
   }
+
   return (
     <div className="todolist mt-5">
          <h2 className="text-white m-3">What's the plan for Today?</h2>
@@ -28,7 +29,7 @@ export default function Todo() {
               <div className="py-3 ">
              <div className='text-white  task_area'>
                <input type="text" value={data }></input>
-              <button className="R_btn">Remove</button>
+              <button className="R_btn px-2">Remove</button>
               </div>
               </div>
             )
