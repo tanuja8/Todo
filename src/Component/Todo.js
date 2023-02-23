@@ -29,7 +29,7 @@ setlistData(updatedListData);
          <button type="button" className="addbtn px-2 mx-3 text-white"  onClick={addAtivity}>Add Task</button>
          </div>
          <div>
-          {listData.map(data=>{
+          {listData.map((data,i)=>{
             return(
             <p key={i}>   
               <div className="py-3 ">
