@@ -15,7 +15,12 @@ export default function Todo() {
      return updatedList
     })
   }
-
+function removeActivity(i){
+const updatedListData=listData.filter((element,id)=>{
+  return i!=id;
+})
+setlistData(updatedListData);
+}
   return (
     <div className="todolist mt-5">
          <h2 className="text-white m-3">What's the plan for Today?</h2>
@@ -26,12 +31,15 @@ export default function Todo() {
          <div>
           {listData.map(data=>{
             return(
+            <p key={i}>   
               <div className="py-3 ">
              <div className='text-white  task_area'>
                <input type="text" value={data }></input>
-              <button className="R_btn px-2">Remove</button>
+              <button className="R_btn px-2" onClick={()=>removeActivity(i)}>Remove</button>
+  
               </div>
               </div>
+              </p>
             )
           })}
          
